@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Moon+Dance&family=Viga&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="OwlCarousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="OwlCarousel/dist/assets/owl.theme.default.min.css">
+    <title>My Portofolio</title>
+  </head>
+  <body>
+<!-- navbar -->
+<div class="navbar navbar-expand-lg navbar-light">
+  <div class="container">
+    <a href="#" class="navbar-brand">Ammar Star</a>
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#ikonkecil" name="button">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="ikonkecil">
+      <div class="navbar-nav ml-auto">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#portofolio" class="nav-link">Portofolio</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#timeline" class="nav-link">Timeline</a>
+        <a href="#kontak" class="nav-link">Kontak</a>
+        <form class="form-inline" action="index.html" method="post">
+          <input type="text" placeholder="Search" class="form-control" name="" value="">
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- header -->
+<div class="header" id="home">
+  <div class="container">
+    <div class="row">
+      <div class="col-md">
+        <h6>Ammar Star</h6>
+        <h5>Web developer <br class="d-none d-md-block">Based In Indonesia</h5>
+        <p>Saya adalah seorang front-end developer yang tertarik dengan perkembangan dunia website.
+          ~~Engkau akan selalu dalam kebaikan selama mau belajar, tetapi ketika engkau merasa cukup disitulah letak kebodohanmu~~
+        </p>
+      </div>
+      <div class="col-md gambar">
+        <img src="images/koridor1.jpg" class="img-fluid img-thumbnail" alt="">
+      </div>
+    </div>
+  </div>
+</div>
+<!-- portofolio -->
+<div class="container">
+  <div class="portofolio" id="portofolio">
+    <h6>Portofolio</h6>
+    <h5>selected works</h5>
+    <hr>
+    <div class="owl-carousel owl-theme">
+      <div class="item">
+        <img src="images/1.png" class="img-thumbnail"  alt="" onclick="fullview(this.src)">
+        <!-- <i class="bi bi-camera item-portofolio" ></i> -->
+      </div>
+      <div class="item">
+        <img src="images/2.png" class="img-thumbnail"  alt="" onclick="fullview(this.src)">
+        <!-- <i class="bi bi-camera item-portofolio" ></i> -->
+      </div>
+      <div class="item">
+        <img src="images/3.png" class="img-thumbnail"  alt="" onclick="fullview(this.src)">
+        <!-- <i class="bi bi-camera item-portofolio"></i> -->
+      </div>
+      <div class="item">
+        <img src="images/4.png" class="img-thumbnail"  alt="" onclick="fullview(this.src)">
+        <!-- <i class="bi bi-camera item-portofolio"></i> -->
+      </div>
+      <div class="item">
+        <img src="images/5.png" class="img-thumbnail"  alt="" onclick="fullview(this.src)">
+        <!-- <i class="bi bi-camera item-portofolio"></i> -->
+      </div>
+      <div class="item">
+        <img src="images/absensi.png" class="img-thumbnail"  alt="" onclick="fullview(this.src)">
+        <!-- <i class="bi bi-camera item-portofolio"></i> -->
+      </div>
+    </div>
+    <div class="full-image">
+      <i class="bi bi-x-square-fill tutup" onclick="tutups()"></i>
+      <img class="id">
+    </div>
+  </div>
+</div>
+<!-- skill -->
+<div class="skill" id="skills">
+  <div class="container">
+    <div class="row">
+      <div class="col-md my-auto">
+        <h6>Skills</h6>
+        <h5>Programmer Skill</h5>
+        <div class="progress mb-3" style="height:25px;">
+          <div class="progress-bar progress-bar-striped bg-warning"  style="width:90%">
+            HTML
+          </div>
+        </div>
+        <div class="progress mb-3" style="height:25px;">
+          <div class="progress-bar progress-bar-striped bg-warning" style="width:80%">
+            CSS
+          </div>
+        </div>
+        <div class="progress mb-3" style="height:25px;">
+          <div class="progress-bar progress-bar-striped bg-warning" style="width:75%">
+            JavaScript
+          </div>
+        </div>
+        <div class="progress mb-3" style="height:25px;">
+          <div class="progress-bar progress-bar-striped bg-warning" style="width:80%">
+            Bootstrap
+          </div>
+        </div>
+        <div class="progress mb-3" style="height:25px;">
+          <div class="progress-bar progress-bar-striped bg-warning" style="width:85%">
+            Github
+          </div>
+        </div>
+        <div class="progress mb-3" style="height:25px;">
+          <div class="progress-bar progress-bar-striped bg-warning" style="width:55%">
+            ReactJs
+          </div>
+        </div>
+      </div>
+      <div class="col-md d-flex justify-content-center">
+        <img src="images/koridor2.jpg" class="img-fluid img-thumbnail" alt="">
+      </div>
+    </div>
+  </div>
+</div>
+<!-- timeline -->
+<div class="container">
+  <div class="timeline" id="timeline">
+    <h6>Timeline</h6>
+    <h5>WORKING PERIOD</h5>
+    <div class="row border-bottom mb-sm-2">
+      <div class="col-md">
+        Januari 2016 - Juli 2023
+      </div>
+      <div class="col-md">
+        Homeroom Teacher
+      </div>
+      <div class="col-md">
+        Bahreisy School
+      </div>
+    </div>
+    <div class="row border-bottom mb-sm-2">
+      <div class="col-md">
+        Juli 2015 - Juli 2018
+      </div>
+      <div class="col-md">
+        Computer Teacher
+      </div>
+      <div class="col-md">
+        Ihyaussalafiyah Secondary School
+      </div>
+    </div>
+  </div>
+<!-- kontak -->
+  <div class="kontak" id="kontak">
+    <div class="row">
+      <div class="col-md">
+        <h6>Contact</h6>
+        <h5>Get In Touch</h5>
+        <p><i class="bi bi-envelope"></i> ammarstar0@gmail.com</p>
+        <p><i class="bi bi-envelope"></i> 085773029049</p>
+        <p><i class="bi bi-geo-alt"></i> Ampel Kejeron 1 no.32</p>
+        <p><i class="bi bi-github"></i> https://github.com/ammarstar/</p>
+      </div>
+      <div class="col-md">
+        <form class="form" action="index.html" method="post">
+          <input type="text" class="form-control mb-1" placeholder="Name" name="" value="">
+          <input type="text" class="form-control mb-1" placeholder="Email" name="" value="">
+          <textarea name="name" class="form-control mb-1" rows="8" style="resize:none" placeholder="Message" ></textarea>
+          <button type="submit" class="form-control btn btn-primary" name="button">Simpan</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="footer d-flex justify-content-center">
+  <p>Copyright &copy AmmarStar</p>
+</div>
+    <!-- Optional JavaScript; choose one of the two! -->
+<script type="text/javascript" src="script.js">
+</script>
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <!-- owl carousel -->
+    <script src="OwlCarousel/docs_src/assets/vendors/jquery.min.js"></script>
+    <script src="OwlCarousel/dist/owl.carousel.min.js"></script>
+    <script type="text/javascript">
+    $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:4
+        }
+    }
+})
+    </script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
